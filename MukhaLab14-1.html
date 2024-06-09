@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        @media (min-width: 768px) and (max-width: 991px) {
+            .header-left {
+                width: 50%;
+            }
+
+            .header-right {
+                width: 50%;
+            }
+
+            .footer-left {
+                width: 50%;
+            }
+
+            .footer-right {
+                width: 50%;
+            }
+
+            .sidebar-left {
+                width: 100%;
+            }
+
+            .content {
+                order: 2;
+            }
+
+            .sidebar-right {
+                order: 1;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .header-left, .header-right, .sidebar-left, .content, .sidebar-right, .footer-left, .footer-right {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .header-left {
+                width: 30%;
+            }
+
+            .header-right {
+                width: 70%;
+            }
+
+            .footer-left {
+                width: 60%;
+            }
+
+            .footer-right {
+                width: 40%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .header-left {
+                width: 30%;
+            }
+
+            .sidebar-left {
+                width: 10%;
+            }
+
+            .content {
+                width: 60%;
+            }
+
+            .sidebar-right {
+                width: 10%;
+            }
+
+            .footer-left {
+                width: 30%;
+            }
+
+            .footer-right {
+                width: 70%;
+            }
+        }
+
+        .bordered-section {
+            border: 2px solid red;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .header-left {
+            background-color: yellow;
+        }
+
+        .footer-right {
+            background-color: yellow;
+        }
+
+        .custom-container {
+            max-width: 1200px;
+            margin: 0 auto; 
+        }
+
+        .sidebar-left, .content, .sidebar-right, .footer-left {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="custom-container">
+            <div class="row justify-content-between">
+                <div class="col-md-4 bordered-section header-left">
+                    <h1>Ліва частина шапки</h1>
+                </div>
+                <div class="col-md-8 bordered-section header-right">
+                    <h1>Права частина шапки</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="custom-container">
+        <div class="row">
+            <div class="col-md-1 bordered-section sidebar-left">
+                <section>
+                    <h2>Ліве меню</h2>
+                </section>
+            </div>
+            <div class="col-md-10 bordered-section content">
+                <section>
+                    <h2>Контент</h2>
+                </section>
+            </div>
+            <div class="col-md-1 bordered-section sidebar-right">
+                <section>
+                    <h2>Праве меню</h2>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="custom-container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 bordered-section footer-left">
+                    <p>Ліва частина підвалу</p>
+                </div>
+                <div class="col-md-6 bordered-section footer-right">
+                    <p>Права частина підвалу</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
